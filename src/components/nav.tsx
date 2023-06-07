@@ -26,17 +26,17 @@ function Nav() {
                         <button><img src={arows} /></button>
                     </div>
                 </div>
-                <div className="w-[250px] h-[0px] border-[1px] border-[#eef2f6]"></div>
+                <div className="w-[250px] h-[0px] border-t-[1px] border-[#eef2f6]"></div>
                 <div className="h-[232px] w-[250px] flex justify-center items-center">
-                    <div className=" w-[202px] h-[186px] font-normal leading-[19.59px] text-[16px] ">
+                    <div className=" w-[202px] h-[185px] font-normal leading-[19.59px] text-[16px] ">
                         <button className="w-[202px] h-[40px] text-[#94a3b8] font-[16px] tracking-[0.5px] flex justify-start items-center  "><img src={home} className="mr-[16px]" />Home</button>
                         <button className="w-[202px] h-[40px] text-[#94a3b8] font-[16px] tracking-[0.5px] flex justify-start items-center mt-[8px]"><img src={checkbox} className="mr-[16px]" />My Tasks</button>
                         <button className="w-[202px] h-[40px] text-[#94a3b8] font-[16px] tracking-[0.5px] flex justify-start items-center mt-[8px]"><img src={cup} className="mr-[16px]" />Goals</button>
                         <button className="w-[202px] h-[40px] text-[#94a3b8] font-[16px] tracking-[0.5px] flex justify-start items-center mt-[8px]"><img src={user} className="mr-[16px]" />Members</button>
                     </div>
                 </div>
-                <div className="relative bottom-[2px] ml-[12px] w-[226px] h-[0px] border-[1px] border-[#eef2f6]"></div>
-                <div className="h-[511px] w-[250px]  flex justify-center items-start">
+                <div className="relative bottom-[2px] ml-[12px] w-[226px] h-[0px] border-t-[1px] border-[#eef2f6]"></div>
+                <div className="h-[511px] w-[249px]  flex justify-center items-start">
                     <div className="h-[224px] w-[226px]  mt-[24px] flex items-center flex-col">
                         <div className="flex h-[24px] w-[202px] justify-between items-start">
                             <h1 className="text-[12px] mt-[2px] tracking-[1px] font-bold leading-[15px] text-[#94a3b8]">WORKSPACE</h1>

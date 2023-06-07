@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "./card";
 import flash from '../image/flash.png'
 import star from '../image/star.png'
 import user2 from '../image/user2.png'
@@ -8,7 +9,7 @@ import more2 from '../image/more2.png'
 function Content () {
     return (
         <div className="absolute h-[843px] w-[1190px] mt-[88px] ml-[250px] font-sfprodisplay">
-            <div className="w-[1190] relative bottom-[1px] h-[0px] border-[1px] border-[#eef2f6]"></div>
+            <div className="w-[1190] relative bottom-[1px] h-[0px] border-t-[1px] border-[#eef2f6]"></div>
             <div className="w-[107px] relative bottom-[4px] left-[136px] h-[2px] bg-[#306BFF] rounded-[50px]"></div>
             <div className="ml-[48.5px] mt-[43.5px] flex">
                 <p className="text-[12px] text-[#94A3B8] tracking-[0.2px] leading-[14px] font-medium mr-[10.5px]">Workspace</p>
@@ -27,11 +28,11 @@ function Content () {
                     <button className="w-[97px] h-[40px] pl-[2px] pt-[0px] border-[1px] rounded-[8px] border-[#E2E8F0] flex items-center justify-center font-semibold text-[14px] tracking-[0.2px]"><img src={user2} className="mr-[8px]"/>Share</button>
                 </div>
             </div>
-            <div className="flex ml-[48px] mt-[24px]">
+            <div className="flex ml-[48px] mt-[24px] h-[40px]">
                 <img src={user3} />
                 <button className="w-[86px] h-[40px] ml-[16px] border-[1px] rounded-[8px] border-[#E2E8F0] flex items-center justify-center mr-[8px] text-[14px] font-semibold tracking-[0.4px]">Only My</button>
             </div>
-            <div className="flex">
+            <div className="flex h-[48px]">
                 <div className="h-[42px] w-[249px] mr-[32px]">
                     <div className="flex items-center justify-between ml-[48px] mt-[48px]">
                         <div className="flex items-center">
@@ -79,6 +80,11 @@ function Content () {
                         </div>
                     </div>
                     <div className="ml-[49px] mt-[16px] w-[250px] h-[2px] bg-[#78C552] rounded-[50px]"></div>
+                </div>
+            </div>
+            <div className="ml-[48px] mt-[48px] w-[1094px] h-[563px]">
+                <div className="flex" >
+                    <Card />
                 </div>
             </div>
         </div>

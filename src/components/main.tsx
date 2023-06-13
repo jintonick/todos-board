@@ -7,7 +7,7 @@ function Main () {
     return (
         <div className="w-[1440px] min-h-[931px]  flex">
             <Nav />
-            <div className="w-[0] h-[931px] border-[0.01px] border-[#eef2f6]"></div>
+                <div className="w-[0] h-[931px] border-r-[1px] border-[#eef2f6]"></div>
             <Header />
             <Content />
         </div>

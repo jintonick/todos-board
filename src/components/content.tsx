@@ -5,11 +5,15 @@ import star from '../image/star.png'
 import user2 from '../image/user2.png'
 import user3 from '../image/user3.png'
 import more2 from '../image/more2.png'
+import cardimg1 from '../image/cardimg1.png'
+import cardimg2 from '../image/cardimg2.png'
+import plus2 from '../image/plus2.png'
+import button2 from '../image/button2.jpg'
 
 function Content () {
     return (
-        <div className="absolute h-[843px] w-[1190px] mt-[88px] ml-[250px] font-sfprodisplay">
-            <div className="w-[1190] relative bottom-[1px] h-[0px] border-t-[1px] border-[#eef2f6]"></div>
+        <div className="absolute h-[843px] w-[1190px] mt-[89px] ml-[250px] font-sfprodisplay">
+            <div className="w-[1190] relative bottom-[2px] h-[0px] border-t-[1px] border-[#eef2f6]"></div>
             <div className="w-[107px] relative bottom-[4px] left-[136px] h-[2px] bg-[#306BFF] rounded-[50px]"></div>
             <div className="ml-[48.5px] mt-[43.5px] flex">
                 <p className="text-[12px] text-[#94A3B8] tracking-[0.2px] leading-[14px] font-medium mr-[10.5px]">Workspace</p>
@@ -25,7 +29,7 @@ function Content () {
                 <div className="flex mr-[48px] mt-[8px] w-[193px] h-[40px] ">
                     <button className="w-[40px] h-[40px] border-[1px] rounded-[8px] border-[#E2E8F0] flex items-center justify-center mr-[8px] "><img src={flash} /></button>
                     <button className="w-[40px] h-[40px] border-[1px] rounded-[8px] border-[#E2E8F0] flex items-center justify-center mr-[8px]"><img src={star} /></button>
-                    <button className="w-[97px] h-[40px] pl-[2px] pt-[0px] border-[1px] rounded-[8px] border-[#E2E8F0] flex items-center justify-center font-semibold text-[14px] tracking-[0.2px]"><img src={user2} className="mr-[8px]"/>Share</button>
+                    <button className="w-[97px] h-[40px] pl-[1px] pt-[0px] border-[1px] rounded-[8px] border-[#E2E8F0] flex items-center justify-center font-semibold text-[14px] tracking-[0.2px]"><img src={user2} className="mr-[8px]"/>Share</button>
                 </div>
             </div>
             <div className="flex ml-[48px] mt-[24px] h-[40px]">
@@ -37,13 +41,17 @@ function Content () {
                     <div className="flex items-center justify-between ml-[48px] mt-[48px]">
                         <div className="flex items-center">
                             <h1 className="text-[14px] text-[#1E293B] tracking-[1px] leading-[14px] font-bold mr-[12px]">TODO</h1>
-                            <h1 className="h-[24px] w-[32px] pr-[1px] text-[12px] text-[#94A3B8] font-bold border-[1px] border-[#E2E8F0] rounded-[1000px] flex items-center justify-center">2</h1>
+                            <h1 className="h-[24px] ml-[-1px] w-[32px] pr-[0px] text-[12px] text-[#94A3B8] font-bold border-[1px] border-[#E2E8F0] rounded-[1000px] flex items-center justify-center">2</h1>
                         </div>
                         <div className="flex mr-[-48px]">
                             <img src={more2} />
                         </div>
                     </div>
                     <div className="ml-[48px] mt-[16px] w-[249px] h-[2px] bg-[#1E293B] rounded-[50px]"></div>
+                    <div className="mt-[32px] ml-[132px]">
+                        <Card headname='UX Adjustments' mainimg={undefined} parag="It just needs to adapt the UI from what you did before." />
+                        <Card headname='Moodboards' mainimg={cardimg2} parag={undefined} />
+                    </div>
                 </div>
                 <div className="h-[42px] w-[249px] mr-[32px]">
                     <div className="flex items-center justify-between ml-[48px] mt-[48px]">
@@ -55,19 +63,28 @@ function Content () {
                             <img src={more2} />
                         </div>
                     </div>
-                    <div className="ml-[48px] mt-[16px] w-[250px] h-[2px] bg-[#306BFF] rounded-[50px]"></div>
+                    <div className="ml-[48px] mt-[16px] w-[250px] h-[2px] bg-[#306BFF] rounded-[50px] "></div>
+                    <div className="mt-[32px] ml-[132px]">
+                        <Card headname='Slack Integration' mainimg={undefined} parag="Add a field in the portal to let the user connect their Slack account." />
+                        <Card headname='Copywriting of the app' mainimg={undefined} parag={"Composing words to provide people with decision-making clarity when interacting with a product."} />
+                
+                    </div>
                 </div>
                 <div className="h-[42px] w-[249px] mr-[32px]">
                     <div className="flex items-center justify-between ml-[48px] mt-[48px]">
                         <div className="flex items-center ml-[1px] mt-[1px]">
                             <h1 className="text-[14px] text-[#1E293B] tracking-[1px] leading-[14px] font-bold mr-[12px]">QA</h1>
-                            <h1 className="h-[24px] w-[32px] pr-[1px] text-[12px] text-[#94A3B8] font-bold border-[1px] border-[#E2E8F0] rounded-[1000px] flex items-center justify-center">8</h1>
+                            <h1 className="h-[24px] ml-[-1px] w-[32px] pr-[0px] text-[12px] text-[#94A3B8] font-bold border-[1px] border-[#E2E8F0] rounded-[1000px] flex items-center justify-center">8</h1>
                         </div>
                         <div className="flex mr-[-50px]">
                             <img src={more2} />
                         </div>
                     </div>
                     <div className="ml-[49.5px] mt-[15px] w-[250px] h-[2px] bg-[#FFB580] rounded-[50px]"></div>
+                    <div className="mt-[32px] ml-[132px] flex flex-col space-y-[60px]">
+                        <Card headname='Dashboard Design' mainimg={cardimg1} parag={undefined} />
+                        <Card headname='Design System' mainimg={undefined} parag="Create a consistent look and feel both on web and mobile."  />
+                    </div>
                 </div>
                 <div className="h-[42px] w-[249px]">
                     <div className="flex items-center justify-between ml-[50px] mt-[48px]">
@@ -80,11 +97,19 @@ function Content () {
                         </div>
                     </div>
                     <div className="ml-[49px] mt-[16px] w-[250px] h-[2px] bg-[#78C552] rounded-[50px]"></div>
+                    <div className="mt-[32px] ml-[132px] flex flex-col space-y-5">
+                        <Card headname='Presentation' mainimg={undefined} parag={"Help businesses to clearly define their annual e-commerce digital strategy by creating a high-level plan."} />
+                        <Card headname='Brainstorming' mainimg={undefined} parag="" />
+                    </div>
                 </div>
-            </div>
-            <div className="ml-[48px] mt-[48px] w-[1094px] h-[563px]">
-                <div className="flex" >
-                    <Card />
+                <div className="absolute bottom-[39px] right-[48px]">
+                    <div className="flex justify-center items-center h-[48px] w-[189px]">
+                        <button className="flex justify-center items-center h-[48px] w-[131px] bg-[#306BFF] rounded-[1000px] ">
+                            <img className="mr-[8px]" src={plus2}/>
+                            <h1 className="text-white tracking-[0.2px] leading-[16.71px] text-[14px] font-bold">New Task</h1>
+                        </button>
+                        <button className="bg-black ml-[10px]"><img className="" src={button2}/></button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -9,13 +9,34 @@ import cardimg1 from '../image/cardimg1.png'
 import cardimg2 from '../image/cardimg2.png'
 import plus2 from '../image/plus2.png'
 import button2 from '../image/button2.jpg'
+import { useAuth } from './authprovider';
+import { useEffect } from "react";
 
-function Content () {
+function MyTasks () {
+
+    const auth = useAuth();
+
+    // TypeScript проверка на существование значения в контексте
+    if (!auth) throw new Error("Auth context must be used within an AuthProvider");
+
+    const { isLoggedIn } = auth;
+
+    useEffect(() => {
+        if (!isLoggedIn) {
+            alert('You need to sign in to access this page.');
+        }
+    }, [isLoggedIn]);
+
+    if (!isLoggedIn) {
+        return null; // Or you could redirect them back to the main page
+    }
+
+
     return (
-        <div className="absolute h-[843px] w-[1190px] mt-[89px] ml-[250px] font-sfprodisplay">
+        <div className="absolute h-[843px] w-[1190px] mt-[1px] ml-[-1px] font-sfprodisplay">
             <div className="w-[1190] relative bottom-[2px] h-[0px] border-t-[1px] border-[#eef2f6]"></div>
             <div className="w-[107px] relative bottom-[4px] left-[136px] h-[2px] bg-[#306BFF] rounded-[50px]"></div>
-            <div className="ml-[48.5px] mt-[43.5px] flex">
+            <div className="ml-[48px] mt-[43.5px] flex">
                 <p className="text-[12px] text-[#94A3B8] tracking-[0.2px] leading-[14px] font-medium mr-[10.5px]">Workspace</p>
                 <p className="text-[12px] text-[#94A3B8] tracking-[0.2px] leading-[14px] font-medium mr-[10.5px]">/</p>
                 <p className="text-[12px] text-[#94A3B8] tracking-[0.2px] leading-[14px] font-medium mr-[10.5px]">Hikoko Design</p>
@@ -29,7 +50,7 @@ function Content () {
                 <div className="flex mr-[48px] mt-[8px] w-[193px] h-[40px] ">
                     <button className="w-[40px] h-[40px] border-[1px] rounded-[8px] border-[#E2E8F0] flex items-center justify-center mr-[8px] "><img src={flash} /></button>
                     <button className="w-[40px] h-[40px] border-[1px] rounded-[8px] border-[#E2E8F0] flex items-center justify-center mr-[8px]"><img src={star} /></button>
-                    <button className="w-[97px] h-[40px] pl-[1px] pt-[0px] border-[1px] rounded-[8px] border-[#E2E8F0] flex items-center justify-center font-semibold text-[14px] tracking-[0.2px]"><img src={user2} className="mr-[8px]"/>Share</button>
+                    <button className="w-[97px] h-[40px] pl-[0px] mt-[0.6px] border-[1px] rounded-[8px] border-[#E2E8F0] flex items-center justify-center font-semibold text-[14px] tracking-[0.2px] leading-[18.71px]"><img src={user2} className="mr-[8px]"/>Share</button>
                 </div>
             </div>
             <div className="flex ml-[48px] mt-[24px] h-[40px]">
@@ -116,4 +137,4 @@ function Content () {
     )
 }
 
-export default Content;
+export default MyTasks;

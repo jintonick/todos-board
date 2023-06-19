@@ -13,10 +13,11 @@ import run3 from '../image/run3.png'
 import run4 from '../image/run4.png'
 import moon from '../image/moon.png'
 import sun from '../image/sun.png'
+import { Link } from 'react-router-dom';
 
 
 
-function Nav() {
+const Nav: React.FC = () => {
     return (
         <div className="w-[250px] h-[931px] bg-white font-sfprodisplay">
             <div>
@@ -29,10 +30,10 @@ function Nav() {
                 <div className="w-[250px] h-[0px] border-t-[1px] border-[#eef2f6]"></div>
                 <div className="h-[232px] w-[250px] flex justify-center items-center">
                     <div className=" w-[202px] h-[185px] font-normal leading-[19.59px] text-[16px] ">
-                        <button className="w-[202px] h-[40px] text-[#94a3b8] font-[16px] tracking-[0.5px] flex justify-start items-center  "><img src={home} className="mr-[16px]" />Home</button>
-                        <button className="w-[202px] h-[40px] text-[#94a3b8] font-[16px] tracking-[0.5px] flex justify-start items-center mt-[8px]"><img src={checkbox} className="mr-[16px]" />My Tasks</button>
-                        <button className="w-[202px] h-[40px] text-[#94a3b8] font-[16px] tracking-[0.5px] flex justify-start items-center mt-[8px]"><img src={cup} className="mr-[16px]" />Goals</button>
-                        <button className="w-[202px] h-[40px] text-[#94a3b8] font-[16px] tracking-[0.5px] flex justify-start items-center mt-[8px]"><img src={user} className="mr-[16px]" />Members</button>
+                        <Link to="/main" className="w-[202px] h-[40px] text-[#94a3b8] font-[16px] tracking-[0.5px] flex justify-start items-center  "><img src={home} className="mr-[16px]" />Home</Link>
+                        <Link to="/main/tasks" className="w-[202px] h-[40px] text-[#94a3b8] font-[16px] tracking-[0.5px] flex justify-start items-center mt-[8px]"><img src={checkbox} className="mr-[16px]" />My Tasks</Link>
+                        <Link to="/main/goals" className="w-[202px] h-[40px] text-[#94a3b8] font-[16px] tracking-[0.5px] flex justify-start items-center mt-[8px]"><img src={cup} className="mr-[16px]" />Goals</Link>
+                        <Link to="/main/members" className="w-[202px] h-[40px] text-[#94a3b8] font-[16px] tracking-[0.5px] flex justify-start items-center mt-[8px]"><img src={user} className="mr-[16px]" />Members</Link>
                     </div>
                 </div>
                 <div className="relative bottom-[1px] ml-[12px] w-[226px] h-[0px] border-t-[1px] border-[#eef2f6]"></div>

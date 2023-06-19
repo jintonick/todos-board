@@ -1,13 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Main from './components/main';
+import Register from './components/registation';
+import { AuthProvider } from './components/authprovider';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="flex justify-center">
-      <Main />
-    </div>
+    <AuthProvider>
+      <Router>
+        <div className="flex justify-center">
+          <Routes>
+            <Route path="/" element={<Register />} />
+            <Route path="/main/*" element={<Main />} /> 
+          </Routes>
+        </div>
+      </Router>
+    </AuthProvider>
   );
 }
 

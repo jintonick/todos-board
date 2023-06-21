@@ -33,7 +33,7 @@ function MyTasks () {
 
 
     return (
-        <div className="absolute h-[843px] w-[1190px] mt-[1px] ml-[-1px] font-sfprodisplay">
+        <div className="absolute h-[843px] w-[61.979vw] mt-[1px] ml-[-1px] font-sfprodisplay">
             <div className="w-[1190] relative bottom-[2px] h-[0px] border-t-[1px] border-[#eef2f6]"></div>
             <div className="w-[107px] relative bottom-[4px] left-[136px] h-[2px] bg-[#306BFF] rounded-[50px]"></div>
             <div className="ml-[48px] mt-[43.5px] flex">
@@ -57,8 +57,8 @@ function MyTasks () {
                 <img src={user3} />
                 <button className="w-[86px] h-[40px] ml-[16px] border-[1px] rounded-[8px] border-[#E2E8F0] flex items-center justify-center mr-[8px] text-[14px] font-semibold tracking-[0.4px]">Only My</button>
             </div>
-            <div className="flex h-[48px]">
-                <div className="h-[42px] w-[249px] mr-[32px]">
+            <div className="flex h-[48px] flex-wrap">
+                <div className="h-[572px] w-[249px] mr-[32px]">
                     <div className="flex items-center justify-between ml-[48px] mt-[48px]">
                         <div className="flex items-center">
                             <h1 className="text-[14px] text-[#1E293B] tracking-[1px] leading-[14px] font-bold mr-[12px]">TODO</h1>
